@@ -1,53 +1,60 @@
 body{
 	padding: 20px;
+	margin: 0px;
 }
 
 /*Navbar starts here*/
 
 .navbar-custom{
+	    width: auto;
+    max-width: none;
+	
+}
 
-	position: relative;
+.navbar-brand img{
+height: 40px;
+margin-right: 28px;
+}
+
+#navbar-menu{
+display: inline-block;
+width: auto;
+max-width: none;
+
 }
 
 .navbar-nav{
 	line-height: 30px;
 	font-weight: bold;
 	flex-direction: row;
-}
 
-#navbar-menu{
-display: inline-block;
-}
-
-#menu-items {
-display: inline-block;
 }
 
 
-.navbar-brand img{
-height: 40px;
-margin-right: 60px;
-}
-
-
-.navbar-nav .nav-item{
+.nav-item{
 	
 	font-size: 12px;
-	text-align: center;
-	margin-right: 43px;
-	color: black!important;
+	text-align: center;	
+	min-width: 15%;
+	margin-right: 5px;
+
+	
 }
 
-#dropdown-custom .nav-item .nav-link a {
+
+.navbar-nav li a {
 	color: black!important;
-	background-color: red;
+
+	
 }
+
 
 .nav-link img{
 	height: 30px;
 	margin-right: 10px;
 	
 }	
+
 
 .lang-custom{
 	display: inline-block;
@@ -56,20 +63,16 @@ margin-right: 60px;
 	
 }
 
-.lang-custom li {
 
-	display: inline-block;
-	font-size: 16px;
-}
 
-.lang-custom li:nth-child(1){
+.navbar-nav li:nth-child(9){
 
 	margin-right: 8px;
 	
 	
 }
 
-.lang-custom li:nth-child(1) ::after{
+.navbar-nav li:nth-child(9) ::after{
 
 background-image: url('../images/chevron-down.svg');
 background-repeat: no-repeat;
@@ -81,12 +84,12 @@ top: 22px;
 left: 39px;
 }
 
-.lang-custom button{
+.navbar-nav button{
 
 	border: 3px solid black;
 	background-color: white;
 	padding: 0 10px ;
-	font-size: 
+	margin-left: 22px;
 	
 }
 
@@ -107,12 +110,14 @@ top: 22px;
 	display: block;
 	background-color: black;
 	float: right;
+	transition: all .2s ease-in-out;
+
 }
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .visibility-custom{
+  .btn-visibility{
   	display: none;
   }
 
@@ -120,24 +125,37 @@ top: 22px;
 }
 
 @media (max-width: 1199px) {
-  .navbar-nav{
+  
+  .navbar-nav
+  {
   	display: none;
   }
 
-  .lang-custom{
-  	display: none;
-  }
-
-  .visibility-custom{
+    .btn-visibility{
   	background-image: url('../images/menu.png');
   	background-repeat: no-repeat;
   	background-color: white;
   	height: 50px;
   	width: 50px;
   	float: right;
-  	margin-top: -15px;
+  	margin-top: -10px;
   	 }
 
+  	 .navbar-nav li a {
+	color: white!important;
+	
+	} 
+
+
+ .navbar-custom{
+  	 	padding: 0px;
+  	 }
+
+ .lang-custom{
+	display: inline-block;
+     }
+
+  
 }
 
 
@@ -170,6 +188,81 @@ padding: 30px 0;
 	text-align: left;
 }
 
+/*hidden element*/
+
+.readmore-hidden{
+	padding: 15px;
+	
+}
+
+.hidden-sec-style{
+	background-color: white;
+	color: black;
+	padding: 10px 10px;
+	text-align: left;
+}
+
+#hidden-sec-text {
+
+	padding: 20px 40px;
+	
+}
+
+#hidden-sec-text h2 {
+	color: #b3198a;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#hidden-sec-text text {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-top: 0px;
+	line-height: 25px;
+}
+
+#hidden-sec-text p{
+	margin-top: 10px;
+}
+
+#hidden-sec-text button{
+
+	background-color: #b3198a;
+	padding: 10 15px;
+	border: none;
+	color: white;
+}
+
+
+
+#hidden-button-close{
+	position: absolute;
+	left: 595px;
+	bottom: 370px;	
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+
+
+}
+
+
+#close-btn-img{
+	display: inline-block;
+	background-image: url('../images/close-sign.jpg');
+	background-repeat:no-repeat;
+	background-size: contain;
+	height:13px;
+	width: 15px;
+	position: absolute;
+	left: 35px;
+	top: 6px;
+
+	
+}
+
+
 /*Main content top section end*/
 
 /*Main content tiles section*/
@@ -177,7 +270,8 @@ padding: 30px 0;
 #custom-tiles{
 	margin-bottom: 90px;
 	background-color: black;
-	line-height: 60px;
+	line-height: 20px;
+
 }
 
 #custom-tiles img{
@@ -188,7 +282,8 @@ padding: 30px 0;
 
 #custom-tiles p{
 	position: relative;
-	margin:; 20px;
+	margin: 50px;
+	margin-bottom: 50px;
 }
 
 #custom-tiles p::before {
@@ -211,6 +306,7 @@ padding: 30px 0;
 	position: absolute;
 	left: 40%;
 	top:50px;
+	cursor: pointer;
 }
 
 
