@@ -1,0 +1,254 @@
+body{
+	padding: 20px;
+}
+
+/*Navbar starts here*/
+
+.navbar-custom{
+
+	position: relative;
+}
+
+.navbar-nav{
+	line-height: 30px;
+	font-weight: bold;
+	flex-direction: row;
+}
+
+#navbar-menu{
+display: inline-block;
+}
+
+#menu-items {
+display: inline-block;
+}
+
+
+.navbar-brand img{
+height: 40px;
+margin-right: 60px;
+}
+
+
+.navbar-nav .nav-item{
+	
+	font-size: 12px;
+	text-align: center;
+	margin-right: 43px;
+	color: black!important;
+}
+
+#dropdown-custom .nav-item .nav-link a {
+	color: black!important;
+	background-color: red;
+}
+
+.nav-link img{
+	height: 30px;
+	margin-right: 10px;
+	
+}	
+
+.lang-custom{
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	
+}
+
+.lang-custom li {
+
+	display: inline-block;
+	font-size: 16px;
+}
+
+.lang-custom li:nth-child(1){
+
+	margin-right: 8px;
+	
+	
+}
+
+.lang-custom li:nth-child(1) ::after{
+
+background-image: url('../images/chevron-down.svg');
+background-repeat: no-repeat;
+height:30px;
+width: 40px;
+content: ' ';
+position: absolute;
+top: 22px;
+left: 39px;
+}
+
+.lang-custom button{
+
+	border: 3px solid black;
+	background-color: white;
+	padding: 0 10px ;
+	font-size: 
+	
+}
+
+.lang-custom button::after{
+background-image: url('../images/langvik-wave-black.png');
+background-repeat: no-repeat;
+background-size: contain;
+height:16px;
+width: 60px;
+content: '';
+position: absolute;
+left: 105px;
+top: 22px;
+
+}
+
+#navbar-menu ul.visible {
+	display: block;
+	background-color: black;
+	float: right;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .visibility-custom{
+  	display: none;
+  }
+
+  
+}
+
+@media (max-width: 1199px) {
+  .navbar-nav{
+  	display: none;
+  }
+
+  .lang-custom{
+  	display: none;
+  }
+
+  .visibility-custom{
+  	background-image: url('../images/menu.png');
+  	background-repeat: no-repeat;
+  	background-color: white;
+  	height: 50px;
+  	width: 50px;
+  	float: right;
+  	margin-top: -15px;
+  	 }
+
+}
+
+
+/*Navbar  end here*/
+
+/*Main content css starts from here*/
+
+#bg-image{
+
+background-image: url('../images/langvik_lahjakorttikauppa_bg.jpg');
+margin-top: 15px;	
+}
+
+/*Main content top section*/
+#main-content{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+
+}
+
+#gift-img{
+
+padding: 30px 0;	
+}
+
+#gift-text{
+	font-size: 10px;
+	padding: 30px 50px 30px 0;
+	text-align: left;
+}
+
+/*Main content top section end*/
+
+/*Main content tiles section*/
+
+#custom-tiles{
+	margin-bottom: 90px;
+	background-color: black;
+	line-height: 60px;
+}
+
+#custom-tiles img{
+
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+#custom-tiles p{
+	position: relative;
+	margin:; 20px;
+}
+
+#custom-tiles p::before {
+	content: '185 EUR';
+	color:#b3198a;
+	font-weight: bold;
+	position: absolute;
+	top: -20px;
+	left: 43%;
+
+}
+
+#custom-tiles p::after{
+	background-color: #b3198a;
+	line-height: 20px;
+	content: 'LUE LISÄÄ';
+	font-size: 10px;
+	width: 80px;
+	padding: 0px!important;
+	position: absolute;
+	left: 40%;
+	top:50px;
+}
+
+
+
+/*Main content tiles sectionend*/
+/*Footer goes here*/
+
+.panel-footer{
+	background-color: black;
+	color: white;
+	
+	position: relative;
+}
+
+#footer-custom section{
+	margin-top: 62px;
+	margin-bottom: 30px;
+	/*padding: 0 50px;*/
+	
+
+}
+
+#footer-custom section:nth-child(2) {
+	margin-top: 40px;
+}
+#sec-img img{
+	height: 70px;
+	width: 150px;
+}
+
+#footer-custom h3{
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.icon_wrapper a img {
+
+	width: 25px;
+
+}
