@@ -1,0 +1,477 @@
+body{
+	padding: 20px;
+	margin: 0px;
+
+}
+/*Navbar starts here*/
+
+.navbar-custom{
+  display: flex;
+  align-items: stretch; 
+  padding: 0px;
+  
+}
+
+.navbar-brand img{
+height: 40px;
+padding: 0px;
+margin-top: -12px;
+}
+
+
+.nav-menu{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0px;
+  margin-left: 7%; 
+  
+
+}
+
+.nav-menu li a {
+
+ color: black!important;
+ font-size: 14px;
+ font-weight: bold;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+
+}
+
+.nav-item{
+  list-style: none;
+  display: flex;
+  align-content: space-around;
+  margin-right: 25px;
+  min-width: 100px;
+  padding: 0px;
+}
+
+
+
+.nav-link{
+	padding: 0px;
+}
+
+.nav-link img{
+	height: 20px;
+	margin-right: 5px;
+	
+	
+}	
+
+.nav-menu li:nth-child(9){
+
+	position: absolute;
+	right:140px;
+	min-width: 10px;
+	
+	
+	
+}
+
+.nav-menu li:nth-child(10){
+	position: absolute;
+	right: 20px;
+	margin-right: 0px;
+	border: 3px solid black;
+	padding: 5px 10px;
+	margin-top: -6px;
+
+	
+	
+}
+
+.nav-menu li:nth-child(9) ::after{
+
+background-image: url('../images/chevron-down.svg');
+background-repeat: no-repeat;
+background-size: cover;
+height:25px;
+width: 25px;
+content: ' ';
+position: absolute;
+top: 12px;
+left: -4px;
+}
+
+
+.nav-menu li:nth-child(10) ::after{
+background-image: url('../images/langvik-wave-black.png');
+background-repeat: no-repeat;
+background-size: contain;
+height:16px;
+width: 60px;
+content: '';
+position: absolute;
+left: 40px;
+top: 24px;
+
+}
+
+#btn-id{
+  background-image: url('../images/menu.png');
+  background-repeat: no-repeat;
+  background-size:  contain;
+  height: 40px;
+  width: 40px;
+}
+
+.menu-btn{
+ display: none;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) and (max-width: 1600px ) {
+
+
+.nav-link img{
+
+	display: none;
+}
+
+.nav-menu li a{
+
+	font-size: 12px;
+	
+}
+
+.nav-menu{
+	display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    width: auto;
+
+}
+
+.nav-menu li{
+
+	display: block;
+    flex: 0 1 auto; 
+    
+    
+}
+
+
+}
+
+@media (max-width: 1199px) {
+  
+  body{
+
+  overflow-x: hidden; 
+  
+}
+.nav-menu{
+  position: absolute;
+  right: 0;
+  height: 92vh;
+  top: 12.2vh;
+  z-index: 999;
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: rgba(136,136,136,.9);
+  transform: translateX(100%);
+  transition: transform 0.8 ease-in;
+}
+
+.nav-menu li{
+  opacity: 50;
+  margin-left: 15px;
+  
+}
+
+
+
+ .nav-link img{
+	
+	margin-right: 15px;
+}
+
+.menu-btn{
+ display: inline-block;
+ position: absolute;
+ right: 20;
+ cursor: pointer;
+ 
+}
+
+
+.nav-activate{
+  transform: translateX(0%);
+}
+
+.nav-menu li:nth-child(8){
+
+	margin-bottom: 20px;
+}
+
+.nav-menu li:nth-child(9){	
+	position: relative;
+	right: 0px;
+
+	
+		
+}
+
+.nav-menu li:nth-child(10){
+	position: absolute;
+	left: 36px;
+	bottom: 10px;	
+	width: 120px;	
+	
+	
+}
+
+
+}
+
+
+/*Navbar  end here*/
+
+/*---------Main content css starts from here----------*/
+
+#bg-image{
+
+background-image: url('../images/langvik_lahjakorttikauppa_bg.jpg');
+margin-top: 15px;	
+}
+
+/*------------Main content top section-------------*/
+#main-content{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+
+
+}
+
+#gift-sec section{
+
+	margin-bottom: 50px;
+	margin-top: 60px;
+}
+
+#gift-img img{
+
+	margin: 50px auto;
+	
+	}
+
+#gift-text{
+	font-size: 15px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+/*-----------------hidden element--------------------*/
+
+.readmore-hidden{
+	
+	background-color: white;
+	margin-bottom: 20px;
+	min-width: 400px;
+	display: block;
+	
+}
+
+.hidden-sec-style{
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding: 10px 10px;
+}
+
+.hidden-sec-style img{
+  height: 400px;
+  width: 100%;
+
+}
+
+
+
+#hidden-sec-text h2 {
+	color: #b3198a;
+	font-weight: bold;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#hidden-sec-text text {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-top: 0px;
+	line-height: 25px;
+}
+
+#hidden-sec-text p{
+	margin-top: 10px;
+}
+
+#hidden-sec-text button{
+
+	background-color: #b3198a;
+	padding: 10 15px;
+	border: none;
+	color: white!important;
+	font-weight: bold;
+
+}
+
+#hidden-sec-text button a{
+
+color: white;
+
+}
+
+
+#hidden-button-close {
+	
+	float: right;	
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+	clear: both;
+
+
+
+}
+
+
+#close-btn-img{
+	display: inline-block;
+	background-image: url('../images/close-sign.jpg');
+	background-repeat:no-repeat;
+	background-size: contain;
+	height:13px;
+	width: 15px;
+	
+	
+}
+
+
+/*-------------Main content top section end----------*/
+
+/*---------Main content tiles section-------------*/
+
+#custom-tiles{
+	margin-bottom: 90px;
+	padding: 10px 20px;
+	background-color: black;
+	line-height: 20px;
+
+
+}
+
+#custom-tiles h2 {
+	text-transform: uppercase;
+	font-size: 1.2em;	
+	margin-bottom: 15px;
+	font-weight:  bold;
+}
+
+#custom-tiles img{
+
+	height: 200px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#custom-tiles p{
+	
+	margin-bottom: 30px;
+}
+
+.tile1 p::before{
+	content: '185 EUR';
+	color:#b3198a;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	top: 260px;
+	left: 40%;
+
+}
+
+.tile2 p::before{
+	content: '128 EUR';
+	color:#b3198a;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	top: 260px;
+	left: 40%;
+
+}
+
+.tile3 p::before{
+	content: '390 EUR';
+	color:#b3198a;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	top: 260px;
+	left: 40%;
+
+}
+#custom-tiles p::after{
+	background-color: #b3198a;
+	content: 'LUE LISÄÄ »';
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 38%;
+	top:360px;
+	cursor: pointer;
+}
+
+
+
+/*-----------Main content end------------------*/
+
+
+
+/*---------------Footer goes here---------------*/
+
+.panel-footer{
+	background-color: black;
+	color: white;
+	
+	position: relative;
+}
+
+#footer-custom section{
+	margin-top: 62px;
+	margin-bottom: 30px;
+	/*padding: 0 50px;*/
+	
+
+}
+
+#footer-custom section:nth-child(2) {
+	margin-top: 40px;
+}
+#sec-img img{
+	height: 70px;
+	width: 150px;
+}
+
+#footer-custom h3{
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.icon_wrapper a img {
+
+	width: 25px;
+
+}

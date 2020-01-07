@@ -6,20 +6,17 @@
         <title>Långvik</title>
         <script src="js/script.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         
-           <header class="navbar-custom">
+           <header>
+           <nav class="navbar-custom">
                  <a class="navbar-brand" href="index.html"> 
                         <img src="images/cropped-Langvik_logo_transp_musta.png">
                  </a>
-
-                 <div class="btn-visibility" id="btn-custom"></div>               
-
-                 <div id="navbar-menu">    
-                     
-                        <ul class="navbar-nav" id="dropdown-custom">
+                
+                <ul class="nav-menu">
                             <li class="nav-item active"><a class="nav-link" href=""><img src="images/hotel.svg">Hotelli</a></li>
                             <li class="nav-item"><a class="nav-link" href=""><img src="images/restaurant.svg">RAVINTOLA</a></li>
                             <li class="nav-item"><a class="nav-link" href=""><img src="images/wellness.svg">WELLNESS</a></li>
@@ -28,106 +25,106 @@
                             <li class="nav-item"><a class="nav-link" href=""><img src="images/gift-cards.svg">LAHJAKORTTI</a></li>
                             <li class="nav-item"><a class="nav-link" href=""><img src="images/news.svg">NEWS</a></li>
                             <li class="nav-item"><a class="nav-link" href=""><img src="images/info.svg">INFO</a></li>
-                            <li class="lang"><a href="">FI</a></li>
-                            <li ><a href=""><button>VARAUKSET</button></a></li>
+                            <li class="nav-item"><a class="nav-link" href="">FI</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">VARAUKSET</a></li>
                         </ul> 
-                 </div>
-                <!-- <div id="navbar-menu">
-                 <ul class="lang-custom">
-                        
-                 </ul> 
-                 </div> -->
+                
+                <div class="menu-btn" id="btn-id"></div>
             
            
-            
+         </nav>   
         </header>
 
         <div id="bg-image">    
             <div id="main-content" class="container">
            
-              <div class="row">
+              <div class="row" id="gift-sec">
                 <section class="col-lg-6 col-sm-12" id="gift-img" ><img src="images/lahjaksi_langvik.png"></section>
+
                 <section class="col-lg-6 col-sm-12" id="gift-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</section>
 
               </div>
 
-                <div class="row readmore-hidden" id="hidden-sec1">
-                 
-                    <section class="col-lg-5 col-sm-12 hidden-sec-style">
-                        <img src="images/room.png">
-                    </section>
+<!-- /*---------------------------------hidden element-----------------------------------*/ -->
 
-                    <section class="col-lg-7 col-sm-12 hidden-sec-style" id="hidden-sec-text">
-                        <h2>MAJOITUSLAHJAKORTTI</h2>
-                        <text>185EUR</text>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> t dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
-                        </p>
-                        <button>LISÄÄ OSTOKORIIN >></button>
+                <div class="readmore-hidden" id="hidden-sec1">
 
-                        <section class="btn1" id="hidden-button-close">
+                    <div class="btn1" id="hidden-button-close">
                             <span >Sulje</span>
                             <span id="close-btn-img"></span>
-                        </section>
-
-                    </section>
-                  </div>  
-
-                  <div class="row readmore-hidden" id="hidden-sec2">
-                        <section class="col-lg-5 col-sm-12 hidden-sec-style">
+                    </div>
+                    <div class="row">
+                 
+                        <section class="col-lg-6 col-sm-12 hidden-sec-style">
                             <img src="images/room.png">
                         </section>
 
-                        <section class="col-lg-7 col-sm-12 hidden-sec-style" id="hidden-sec-text">
-                                <h2>MAJOITUSLAHJAKORTTI</h2>
-                                <text>188EUR</text>
+                        <section class="col-lg-6 col-sm-12 hidden-sec-style" id="hidden-sec-text">
+                            <h2>MajoituskoRtti</h2>
+                            <text>185EUR</text>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> t dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+                            </p>
+                            <button><a href=""> LISÄÄ OSTOKORIIN » </a></button>
+                       </section>
+                     </div>
+                </div>  
+
+                <div class="readmore-hidden" id="hidden-sec2">
+                    <div class="btn2" id="hidden-button-close">
+                        <span >Sulje</span>
+                        <span id="close-btn-img"></span>
+                    </div>
+                    <div class="row">
+                        <section class="col-lg-6 col-sm-12 hidden-sec-style">
+                        <img src="images/dish.png">
+                        </section>
+                        <section class="col-lg-6 col-sm-12 hidden-sec-style" id="hidden-sec-text">
+                                <h2>MAISTELUMENU LAHJAKORTTI</h2>
+                                <text>128EUR</text>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> t dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
                                 </p>
-                                <button>LISÄÄ OSTOKORIIN >></button>
-                                
-                                <section class="btn2" id="hidden-button-close">
-                                    <span >Sulje</span>
-                                    <span id="close-btn-img"></span>
-                                </section>
-
-                         </section>
+                                <button>LISÄÄ OSTOKORIIN »</button>
+                        </section>
+                     </div>
                     </div>
 
-                <div class="row readmore-hidden" id="hidden-sec3">
-                    <section class="col-lg-5 col-sm-12 hidden-sec-style">
-                        <img src="images/room.png">
-                    </section>
-
-                    <section class="col-lg-7 col-sm-12 hidden-sec-style" id="hidden-sec-text">
-                        <h2>MAJOITUSLAHJAKORTTI</h2>
-                        <text>260EUR</text>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> t dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
-                        </p>
-                        <button>LISÄÄ OSTOKORIIN >></button>
-                        
-                        <section class="btn3" id="hidden-button-close">
+                <div class="readmore-hidden" id="hidden-sec3">
+                    <div class="btn3" id="hidden-button-close">
                             <span >Sulje</span>
                             <span id="close-btn-img"></span>
-                        </section>
-
+                        </div>
+                    <div class="row">    
+                    <section class="col-lg-6 col-sm-12 hidden-sec-style">
+                        <img src="images/sauna.png">
                     </section>
 
+                    <section class="col-lg-6 col-sm-12 hidden-sec-style" id="hidden-sec-text">
+                        <h2>luksuslahjakortti</h2>
+                        <text>390EUR</text>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br> t dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? 
+                        </p>
+                        <button>LISÄÄ OSTOKORIIN »</button>
+                        
+                        
 
-
-                    
-
-                 
+                    </section> 
+                    </div>                
                 </div>
+<!-- /*---------------------------------hidden element-----------------------------------*/ -->
+
+<!-- /*-------------------------Main content tilesection-----------------------------------*/ -->
+
 
               <div class="row">
                  <div class="col-lg-4 col-sm-12">
-                   <section class="tile1" id="custom-tiles"><h2>Majoituskotti</h2><img src="images/room-small.png"><p>sed quia non numquam eius modi tempora incidunt ut</p> </section></div>
+                   <section class="tile1" id="custom-tiles"><h2>MajoituskoRtti</h2><img src="images/room-small.png"><p>Sed quia non numquam eius modi tempora incidunt ut sed quia non numquam eius modi</p> </section></div>
                    
 
                    <div class="col-lg-4 col-sm-12">  
-                   <section class="tile2" id="custom-tiles"><h2>Majoituskotti</h2><img src="images/dish-small.png"><p>sed quia non numquam eius modi tempora incidunt ut</p></section></div>
+                   <section class="tile2" id="custom-tiles"><h2>MAISTELUMENU LAHJAKORTTI</h2><img src="images/dish-small.png"><p>Sed quia non numquam eius modi tempora incidunt ut sed quia non numquam eius modi</p></section></div>
 
                    <div class="col-lg-4 col-sm-12">  
-                   <section class="tile3"  id="custom-tiles"><h2>Majoituskotti</h2><img src="images/sauna-small.png"><p>sed quia non numquam eius modi tempora incidunt ut dfgdgf</p> </section></div>
+                   <section class="tile3"  id="custom-tiles"><h2>luksuslahjakortti</h2><img src="images/sauna-small.png"><p>Sed quia non numquam eius modi tempora incidunt ut sed quia non numquam eius modi</p> </section></div>
                </div>
             </div>  
          </div>
@@ -172,11 +169,31 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script> 
-                        // $(document).ready(function() {
-                        //     $('#btn-custom').click(function() {
-                        //     $('#navbar-menu ul').toggleClass('visible');
-                        //     });
-                        // });
+
+                
+
+            const navSlide = () => {
+                const btn = document.querySelector('.menu-btn');
+                const nav = document.querySelector('.nav-menu');
+                const navLinks = document.querySelector('.nav-menu li');
+
+                btn.addEventListener('click', () => {
+                    nav.classList.toggle('nav-activate');
+                });
+
+                // navLinks.forEach((link, index) => {
+                //     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                // });
+                
+            }
+
+            navSlide();
+
+                        $(document).ready(function() {
+                            $('#btn-custom').click(function() {
+                            $('#navbar-menu ul').toggleClass('visible');
+                            });
+                        });
 
                         $(document).ready(function() {
                             
@@ -219,8 +236,12 @@
                                 $('#hidden-sec1').hide();
                                 $('#hidden-sec2').hide();
                             });
+
+
+
                         });
 
                     </script>
-    </body>
+       </div>             
+   
 </html>    
